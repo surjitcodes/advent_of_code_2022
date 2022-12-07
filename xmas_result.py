@@ -1,7 +1,7 @@
 import sys
 import time
 
-def part_1(input_file):
+def day_1(input_file):
     best = person = 1
     best_sum = total = 0
     with open(input_file) as f:
@@ -20,9 +20,9 @@ def part_1(input_file):
         return best, best_sum
 
 if __name__ == '__main__':
-    start_part_1 = time.time()
-    part_1(sys.argv[1])
-    print(f"Part 1: {time.time() - start_part_1:.10f} seconds")
+    start_day_1 = time.time()
+    day_1(sys.argv[1])
+    print(f"Part 1: {time.time() - start_day_1:.10f} seconds")
 
     #start_part_2 = time.time()
     #part_2(sys.argv[1])
